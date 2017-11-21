@@ -18,16 +18,16 @@ public class Zoo {
 	
 	public void addAnimal(Animal animal){
 		if (animal.getType().equals("MAMMIFERE") && animal.getComportement().equals("CARNIVORE")){
-			zoneCarnivore.addAnimal(animal.getType(), animal.getNom(), animal.getComportement() );
+			zoneCarnivore.addAnimal(animal);
 		}
 		else if (animal.getType().equals("MAMMIFERE") && animal.getComportement().equals("HERBIVORE")){
-			savaneAfricaine.addAnimal(animal.getType(), animal.getNom(), animal.getComportement());
+			savaneAfricaine.addAnimal(animal);
 		}
 		else if (animal.getType().equals("REPTILE")){
-			fermeReptile.addAnimal(animal.getType(), animal.getNom(), animal.getComportement());
+			fermeReptile.addAnimal(animal);
 		}
 		else if (animal.getType().equals("POISSON")){
-			aquarium.addAnimal(animal.getType(), animal.getNom(), animal.getComportement());
+			aquarium.addAnimal(animal);
 		}
 	}
 	

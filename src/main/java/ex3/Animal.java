@@ -4,7 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Animal {
-		
+		// Stocke id
+		private String nom;
+		// Stocke code
+		private String type;
+		// Stocke nom
+		private String comportement;
 		
 		public Animal(String nom, String type, String comportement) {	 
 			this.setNom(nom);
