@@ -1,5 +1,8 @@
 package ex3;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Zoo {
 
 	private String nom;
@@ -12,18 +15,19 @@ public class Zoo {
 		this.nom = nom;
 	}
 	
-	public void addAnimal(String nomAnimal, String typeAnimal, String comportement){
-		if (typeAnimal.equals("MAMMIFERE") && comportement.equals("CARNIVORE")){
-			zoneCarnivore.addAnimal(typeAnimal, nomAnimal, comportement);
+	
+	public void addAnimal(Animal animal){
+		if (animal.getType().equals("MAMMIFERE") && animal.getComportement().equals("CARNIVORE")){
+			zoneCarnivore.addAnimal(animal.getType(), animal.getNom(), animal.getComportement() );
 		}
-		else if (typeAnimal.equals("MAMMIFERE") && comportement.equals("HERBIVORE")){
-			savaneAfricaine.addAnimal(typeAnimal, nomAnimal, comportement);
+		else if (animal.getType().equals("MAMMIFERE") && animal.getComportement().equals("HERBIVORE")){
+			savaneAfricaine.addAnimal(animal.getType(), animal.getNom(), animal.getComportement());
 		}
-		else if (typeAnimal.equals("REPTILE")){
-			fermeReptile.addAnimal(typeAnimal, nomAnimal, comportement);
+		else if (animal.getType().equals("REPTILE")){
+			fermeReptile.addAnimal(animal.getType(), animal.getNom(), animal.getComportement());
 		}
-		else if (typeAnimal.equals("POISSON")){
-			aquarium.addAnimal(typeAnimal, nomAnimal, comportement);
+		else if (animal.getType().equals("POISSON")){
+			aquarium.addAnimal(animal.getType(), animal.getNom(), animal.getComportement());
 		}
 	}
 	
